@@ -16,6 +16,7 @@
 		62C7941D25EB2B860078772F /* TabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C7941C25EB2B860078772F /* TabBarContoller.swift */; };
 		62C7942225EB2E8D0078772F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C7942125EB2E8D0078772F /* ProfileViewController.swift */; };
 		62C7942625EB302D0078772F /* NewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C7942525EB302D0078772F /* NewItemCell.swift */; };
+		62C7942925EB33C60078772F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C7942825EB33C60078772F /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		62C7941C25EB2B860078772F /* TabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContoller.swift; sourceTree = "<group>"; };
 		62C7942125EB2E8D0078772F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		62C7942525EB302D0078772F /* NewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemCell.swift; sourceTree = "<group>"; };
+		62C7942825EB33C60078772F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				62C7942525EB302D0078772F /* NewItemCell.swift */,
 				62C7942125EB2E8D0078772F /* ProfileViewController.swift */,
 				620907A525EB235900FEED06 /* NewOrderViewController.swift */,
+				62C7942825EB33C60078772F /* Item.swift */,
 				620907AA25EB235B00FEED06 /* Assets.xcassets */,
 				620907AC25EB235B00FEED06 /* LaunchScreen.storyboard */,
 				620907AF25EB235B00FEED06 /* Info.plist */,
@@ -149,6 +152,7 @@
 				62C7941D25EB2B860078772F /* TabBarContoller.swift in Sources */,
 				620907A225EB235900FEED06 /* AppDelegate.swift in Sources */,
 				62C7942625EB302D0078772F /* NewItemCell.swift in Sources */,
+				62C7942925EB33C60078772F /* Item.swift in Sources */,
 				62C7942225EB2E8D0078772F /* ProfileViewController.swift in Sources */,
 				620907A425EB235900FEED06 /* SceneDelegate.swift in Sources */,
 				62C7941A25EB2B0E0078772F /* PastOrderViewController.swift in Sources */,
