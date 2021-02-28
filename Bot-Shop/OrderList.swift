@@ -10,14 +10,19 @@ import UIKit
 class OrderList: UIViewController {
     
     let tableView =  UITableView()
+    var orders: [Order] = []
     
-    let orders = [Order(title: "July 2020", image: UIImage(named: "box")!),
-                  Order(title: "June 2020", image: UIImage(named: "box")!),
-                  Order(title: "May 2020", image: UIImage(named: "box")!),
-                  Order(title: "December 2019", image: UIImage(named: "box")!),
-                  Order(title: "November 2019", image: UIImage(named: "box")!),
-                  Order(title: "October 2019", image: UIImage(named: "box")!),
-                  Order(title: "September 2019", image: UIImage(named: "box")!)]
+    var orderItems: [Item] = []
+    
+    var currentOrder: Order!
+    
+    //    let orders = [Order(title: "July 2020", image: UIImage(named: "box")!),
+    //                  Order(title: "June 2020", image: UIImage(named: "box")!),
+    //                  Order(title: "May 2020", image: UIImage(named: "box")!),
+    //                  Order(title: "December 2019", image: UIImage(named: "box")!),
+    //                  Order(title: "November 2019", image: UIImage(named: "box")!),
+    //                  Order(title: "October 2019", image: UIImage(named: "box")!),
+    //                  Order(title: "September 2019", image: UIImage(named: "box")!)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,16 +46,16 @@ class OrderList: UIViewController {
     
 }
 
-extension OrderList: UITableViewDelegate, UITableViewDataSource {
+extension OrderList: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orders.count
+        return currentOrder.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PastOrderCell
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .none
-        cell.setBoxContents(box: orders[indexPath.row])
+        cell.setCellContents(item: currentOrder.items[indexPath.row])
         return cell
     }
     

@@ -63,6 +63,7 @@ class PastOrderCell: UITableViewCell{
     func setBoxContents(box: Order){
         textLabel?.text = box.title
         imageView?.image = box.image
+        
     }
 
     required init?(coder: NSCoder) {
