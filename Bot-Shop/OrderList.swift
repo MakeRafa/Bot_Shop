@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class PastOrderViewController: UIViewController {
+class OrderList: UIViewController {
     
     let tableView =  UITableView()
     
@@ -41,7 +41,7 @@ class PastOrderViewController: UIViewController {
     
 }
 
-extension PastOrderViewController: UITableViewDelegate, UITableViewDataSource {
+extension OrderList: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orders.count
     }
@@ -56,12 +56,6 @@ extension PastOrderViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected!")
-        let nextVC: OrderList = OrderList()
-        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
 }
